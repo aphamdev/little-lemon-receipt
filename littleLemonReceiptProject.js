@@ -29,11 +29,13 @@ function getPrices(taxBoolean) {
         else if (taxBoolean === false) {
             finalPrice = food.price;
         }
+
         else {
             console.log("You need to pass a boolean to the getPrices call!");
             return;
         }
         console.log('Dish: ' + food.name + " Price: $" + finalPrice);
+        // instructions say to add it as an argument but mean to concatenate strings
     }
 
 }
